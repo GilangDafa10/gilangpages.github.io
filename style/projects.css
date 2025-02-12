@@ -1,0 +1,165 @@
+.projects-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10rem;
+  background-color: rgba(21, 21, 21, 0.236);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(204, 204, 204, 0.246);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  min-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: #e9ecef;
+  border-right: 1px solid #ccc; */
+}
+
+.carousel-item:last-child {
+  border-right: none;
+}
+
+.daftar-isi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 45px;
+  gap: 10px;
+}
+
+.carousel-image {
+  width: auto;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.carousel-title {
+  font-size: 1.5rem;
+}
+
+.carousel-description {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  color: var(--white-semi-transparent);
+}
+
+.daftar-isi .btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.daftar-isi .btn:hover {
+  background-color: var(--main-color);
+  color: black;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .projects-section {
+    margin-bottom: 8rem;
+  }
+
+  .carousel-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 20px;
+  }
+
+  .carousel-image {
+    height: 150px;
+  }
+
+  .carousel-item .daftar-isi {
+    margin-right: 0;
+  }
+
+  .carousel-title {
+    font-size: 1.3rem;
+  }
+
+  .carousel-description {
+    font-size: 0.9rem;
+  }
+
+  .daftar-isi .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .projects-section {
+    margin-bottom: 8rem;
+  }
+
+  .carousel-item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 15px;
+  }
+
+  .carousel-image {
+    height: 120px;
+  }
+
+  .carousel-item .daftar-isi {
+    margin-right: 0;
+  }
+
+  .carousel-title {
+    font-size: 1.1rem;
+  }
+
+  .carousel-description {
+    font-size: 0.8rem;
+  }
+
+  .daftar-isi .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
