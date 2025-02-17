@@ -29,7 +29,7 @@ export function projectsSectionFunctionality() {
     projectHTML += `
       <div class="carousel-item">
         <div class="img-container">
-          <img src="../images and icons/icons/${project.image}" alt="${project.title}" class="carousel-image" />
+          <img src="./images and icons/icons/${project.image}" alt="${project.title}" class="carousel-image" />
         </div>
         <div class="daftar-isi">
           <h2 class="carousel-title">${project.title}</h2>
